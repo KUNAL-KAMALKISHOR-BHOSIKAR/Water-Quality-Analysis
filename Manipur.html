@@ -3,13 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>State of Maharashtra</title>
+    <title>State of Manipur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex; 
+            align-items: center;
+        }
+
+        .water-info {
+            flex: 1; 
+            margin-right: 20px; 
+        }
+
+        .water-graph {
+            flex: 1; 
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li strong {
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Maharashtra</h1>
-        <img src="State_Pie_Charts/MANIPUR_pie_chart.png" alt="Maharashtra Flag">
-        <img src="Prediction Model/images/MANIPUR_WQI_Prediction.png" alt="Maharashtra Flag">
+        <h1>Welcome to Manipur</h1>
     </header>
+
+    <section>  
+        <div class="water-info">
+            <h2>Water Quality Information</h2>
+            <ul>
+                <li><strong>Water Quality:</strong> Invalid WQI value</li>
+                <li><strong>Description:</strong> Please enter a value between 0 and 100.</li>
+                <li><strong>Water Class:</strong> E</li>
+                <li><strong>Designated Use:</strong> Unfit for all uses</li>
+            </ul>
+            <img src="Prediction Model/images/MANIPUR_WQI_Prediction.png" alt="Manipur WQI Prediction"> 
+        </div>
+        <div class="water-graph">
+            <img src="State_Pie_Charts/MANIPUR_pie_chart.png" alt="Manipur Pie Chart">
+        </div>
+    </section>
 </body>
 </html>
