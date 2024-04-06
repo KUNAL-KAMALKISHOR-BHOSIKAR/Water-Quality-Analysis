@@ -14,6 +14,134 @@ svg path {
   stroke-width: 0.25;
 }
 
+#INGA {
+  fill: #0d0887;
+}
+
+#INPY {
+  fill: #16078a;
+}
+
+#INDL {
+  fill: #7801a8;
+}
+
+#INAR {
+  fill: #8f0da4;
+}
+
+#INUP {
+  fill: #c5407e;
+}
+
+#INMH {
+  fill: #da5b69;
+}
+
+#INKA {
+  fill: #e3685f;
+}
+
+#INOR {
+  fill: #e56b5d;
+}
+
+#INAP {
+  fill: #eb7655;
+}
+
+#INBR {
+  fill: #eb7655;
+}
+
+#INTR {
+  fill: #ec7754;
+}
+
+#INCT {
+  fill: #ed7953;
+}
+
+#INTN {
+  fill: #ee7b51;
+}
+
+#INWB {
+  fill: #f3854b;
+}
+
+#INRJ {
+  fill: #f48948;
+}
+
+#INMN {
+  fill: #f58c46;
+}
+
+#INMZ {
+  fill: #f68d45;
+}
+
+#INHP {
+  fill: #f79143;
+}
+
+#INMP {
+  fill: #f79143;
+}
+
+#INNL {
+  fill: #f99a3e;
+}
+
+#INHR {
+  fill: #f99a3e;
+}
+
+#INML {
+  fill: #fba238;
+}
+
+#INKL {
+  fill: #fca537;
+}
+
+#INAS {
+  fill: #fdab33;
+}
+
+#INSK {
+  fill: #fdac33;
+}
+
+#INGJ {
+  fill: #fdac33;
+}
+
+#INTG {
+  fill: #f0f921;
+}
+
+#INPB {
+  fill: #feba2c;
+}
+
+#INJK {
+  fill: #fdc229;
+}
+
+#INUT {
+  fill: #f2f227;
+}
+
+#INJH {
+  fill: #f0f921;
+}
+
+#INLA {
+  fill: #fdc229;
+}
+
 svg path:hover {
   fill: #0f7a9e;
   transition: 0.5s;
