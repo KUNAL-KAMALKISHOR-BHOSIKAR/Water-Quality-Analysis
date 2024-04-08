@@ -5,87 +5,310 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>State of Uttrakhand</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
 
-        h1 {
-            margin-bottom: 10px;
-        }
+      h1 {
+        margin-bottom: 10px;
+        margin-left: 50px;
+      }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
 
-        section {
-            background-color: #fff;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: flex; 
-            align-items: center;
-        }
+      section {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+      }
 
-        .water-info {
-            flex: 1; 
-            margin-right: 20px; 
-        }
+      .water-info {
+        flex: 1;
+        margin-right: 20px;
+      }
 
-        .water-graph {
-            flex: 1; 
-        }
+      .water-graph {
+        flex: 1;
+      }
 
-        h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
+      h2 {
+        color: #333;
+        margin-bottom: 10px;
+      }
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
 
-        li {
-            margin-bottom: 10px;
-        }
+      li {
+        margin-bottom: 10px;
+      }
 
-        li strong {
-            margin-right: 5px;
-        }
+      li strong {
+        margin-right: 5px;
+      }
+
+      .custom-dropdown {
+        width: 200px; /* Setting the width */
+        height: 30px; /* Setting the height */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 5px;
+        font-size: 16px;
+      }
+
+      #dataContainer {
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
     </style>
+
+    <script>
+      function renderData() {
+        var selectedOption = document.getElementById("myDropdown").value;
+        var dataContainer = document.getElementById("dataContainer");
+
+        // Clear previous data
+        dataContainer.innerHTML = "";
+
+        // Render data based on selected option
+        if (selectedOption === "Option1") {
+          dataContainer.innerHTML = `
+        <div class="year-info">
+        <h2>Water Quality Index</h2>
+        <p><b>WQI (0-100):</b>Value</p>
+        <p><b>Water Quality:</b>Stuff</p>
+        <p><b>Class:</b>Stuff</p>
+        <p><b>Designated use of water:</b>
+            <ol>
+                <li>Point 1</li>
+                <li>Point 2</li>
+            </ol>
+        </p>
+        </div>
+
+      `;
+        } else if (selectedOption === "2023") {
+          dataContainer.innerHTML = `
+          <div class="year-info">
+        <h2>Water Quality Index</h2>
+        <p><b>WQI (0-100):</b>74.665800	</p>
+        <p><b>Water Quality:</b>Poor
+(Marginal)</p>
+        <p><b>Class:</b>C</p>
+        <p><b>Description: </b>Water quality is frequently threatened. The
+conditions often depart from natural levels</p>
+        <p><b>Designated use of water:</b>
+            <ol>
+                <li>Drinking water source after conventional
+treatment and disinfection</li>
+            
+            </ol>
+        </p>
+        </div>
+      `;
+        } else if (selectedOption === "2024") {
+          dataContainer.innerHTML = `
+        <div class="year-info">
+        <h2>Water Quality Index</h2>
+        <p><b>WQI (0-100):</b>75.982180	</p>
+        <p><b>Water Quality:</b>Poor
+(Marginal)</p>
+        <p><b>Class:</b>C</p>
+        <p><b>Description: </b>Water quality is frequently threatened. The
+conditions often depart from natural levels</p>
+        <p><b>Designated use of water:</b>
+            <ol>
+                <li>Drinking water source after conventional
+treatment and disinfection</li>
+            
+            </ol>
+        </p>
+        </div>
+      `;
+        } else if (selectedOption === "2025") {
+          dataContainer.innerHTML = `
+        <div class="year-info">
+        <h2>Water Quality Index</h2>
+        <p><b>WQI (0-100):</b>75.233400</p>
+        <p><b>Water Quality:</b>Poor
+(Marginal)</p>
+        <p><b>Class:</b>C</p>
+        <p><b>Description: </b>Water quality is frequently threatened. The
+conditions often depart from natural levels</p>
+        <p><b>Designated use of water:</b>
+            <ol>
+                <li>Drinking water source after conventional
+treatment and disinfection</li>
+            
+            </ol>
+        </p>
+        </div>
+      `;
+        } else if (selectedOption === "2026") {
+          dataContainer.innerHTML = `
+        <div class="year-info">
+        <h2>Water Quality Index</h2>
+        <p><b>WQI (0-100):</b>	76.078343</p>
+        <p><b>Water Quality:</b>Poor
+(Marginal)</p>
+        <p><b>Class:</b>C</p>
+        <p><b>Description: </b>Water quality is frequently threatened. The
+conditions often depart from natural levels</p>
+        <p><b>Designated use of water:</b>
+            <ol>
+                <li>Drinking water source after conventional
+treatment and disinfection</li>
+            
+            </ol>
+        </p>
+        </div>
+      `;
+        }
+      }
+    </script>
 </head>
 <body>
     <header>
         <h1>Welcome to Uttrakhand</h1>
     </header>
-
+    <center>
+      <h1>Water Quality Information</h1>
+    </center>
+    <center><h2>Please select a year for more information</h2></center>
+    <div>
+      <center>
+        <select id="myDropdown" onchange="renderData()">
+          <option value="Option1">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+        </select>
+      </center>
+    </div>
+    <div id="dataContainer"></div>
     <section>  
         <div class="water-info">
-            <h2>Water Quality Information</h2>
+            <!-- <h2>Water Quality Information</h2>
             <ul>
                 <li><strong>Water Quality:</strong> Good</li>
                 <li><strong>Description:</strong> Water quality is protected with a minor degree of threat. The conditions rarely depart from natural levels</li>
                 <li><strong>Water Class:</strong> C</li>
                 <li><strong>Designated Use:</strong> Drinking water source after conventional treatment and disinfection</li>
-            </ul>
-            <img src="Prediction Model/images/UTTARAKHAND_WQI_Prediction.png" alt="Uttarakhand WQI Prediction"> 
+            </ul> -->
+            <img src="states/UTTARAKHAND_wqi_vs_year.png" alt="Uttarakhand WQI Prediction"> 
         </div>
         <div class="water-graph">
             <img src="State_Pie_Charts/UTTARAKHAND_pie_chart.png" alt="Uttrakhand Pie Chart">
         </div>
     </section>
+    <h1>Water Quality Classifications and Criteria</h1>
+    <section>
+        
+      <table>
+        <tr>
+          <th>Class of Water</th>
+          <th>Criteria</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>
+            <ul>
+              <li>Total Coliforms Organism MPN/100ml shall be 50 or less</li>
+              <li>pH between 6.5 and 8.5</li>
+              <li>Dissolved Oxygen 6mg/l or more</li>
+              <li>Biochemical Oxygen Demand 5 days 20C 2mg/l or less</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>
+            <ul>
+              <li>Total Coliforms Organism MPN/100ml shall be 500 or less</li>
+              <li>pH between 6.5 and 8.5</li>
+              <li>Dissolved Oxygen 5mg/l or more</li>
+              <li>Biochemical Oxygen Demand 5 days 20C 3mg/l or less</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>C</td>
+          <td>
+            <ul>
+              <li>Total Coliforms Organism MPN/100ml shall be 5000 or less</li>
+              <li>pH between 6 to 9</li>
+              <li>Dissolved Oxygen 4mg/l or more</li>
+              <li>Biochemical Oxygen Demand 5 days 20C 3mg/l or less</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>
+            <ul>
+              <li>pH between 6.5 to 8.5</li>
+              <li>Dissolved Oxygen 4mg/l or more</li>
+              <li>Free Ammonia (as N) 1.2 mg/l or less</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>
+            <ul>
+              <li>pH between 6.0 to 8.5</li>
+              <li>Electrical Conductivity at 25C micro mhos/cm Max.2250</li>
+              <li>Sodium absorption Ratio Max. 26</li>
+              <li>Boron Max. 2mg/l</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Not Meeting A, B, C, D & E Criteria</td>
+          <td></td>
+        </tr>
+      </table>
 </body>
 </html>
